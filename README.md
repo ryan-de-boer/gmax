@@ -20,9 +20,25 @@ python gmax_probe.py C:\tmp\tree.gmax --export-obj C:\tmp\tree.obj
 # to_gmax 
 Imports an obj file into gmax. It relies on maxscript to do the import, I would have liked it to directly save to the gmax file but Codex thought it was a bit too risky since it doesn't know the file format well enough yet. I've made it support a large 50 meg obj so its fairly efficient.
 
-$ python to_gmax.py
+$ python to_gmax.py -h
+
 usage: to_gmax.py [-h] [--gmax-exe GMAX_EXE] [--timeout TIMEOUT] obj output
-to_gmax.py: error: the following arguments are required: obj, output
+
+Convert a Wavefront OBJ into a native Gmax Editable Mesh scene. Gmax's binary
+scene container is not written directly. This tool parses OBJ, generates a
+temporary MAXScript that constructs editable meshes in Gmax, and asks the
+installed Gmax executable to save the result as a .gmax file.
+
+positional arguments:
+  obj                  Input Wavefront OBJ file
+  output               Output .gmax file
+
+options:
+  -h, --help           show this help message and exit
+  --gmax-exe GMAX_EXE  Path to gmax.exe (default: C:\gmax\gmax.exe or
+                       GMAX_EXE)
+  --timeout TIMEOUT    Seconds to wait for Gmax to save (default: 180)
+
 
 eg:
 python to_gmax.py "c:\tmp\tree.obj" "c:\tmp\tree.gmax"
