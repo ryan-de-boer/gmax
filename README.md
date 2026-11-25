@@ -37,6 +37,6 @@ Here is the meshes imported from the obj file:
 
 Here is an example of importing a tree obj file. This is the file that crashed gmax if I show the material in viewport when using DirectX.
 
-<img width="811" height="740" alt="tree" src="https://github.com/user-attachments/assets/27114fd4-637f-4077-9ffa-20c8d009cd42" />
+<img width="1920" height="1044" alt="tree_betterview" src="https://github.com/user-attachments/assets/0f2a571d-3e44-4f8f-ad4d-7927b532b239" />
 
 Please let me know of any bugs or feature requests. I'm working on a bigger scene and hope gmax can do it (if not I'll just use blender).
