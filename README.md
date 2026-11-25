@@ -43,11 +43,13 @@ options:
 eg:
 python to_gmax.py "c:\tmp\tree.obj" "c:\tmp\tree.gmax"
 
+# Screenshots
+
 Here is an example of 2 textured boxes and a textured cylinder which I export to an obj file:
 
 <img width="811" height="740" alt="boxesAndEditableMesh" src="https://github.com/user-attachments/assets/faeae04e-60b2-4991-94f1-0d6d8fe54114" />
 
-Here is the meshes imported from the obj file:
+Here is the meshes imported from the obj file into Blender:
 
 <img width="912" height="752" alt="blender" src="https://github.com/user-attachments/assets/5823a58c-57dc-4489-87db-fa7bf24547de" />
 
@@ -55,4 +57,4 @@ Here is an example of importing a tree obj file. This is the file that crashed g
 
 <img width="1920" height="1044" alt="tree_betterview" src="https://github.com/user-attachments/assets/0f2a571d-3e44-4f8f-ad4d-7927b532b239" />
 
-Please let me know of any bugs or feature requests. I'm working on a bigger scene and hope gmax can do it (if not I'll just use blender).
+Please let me know of any bugs or feature requests. I'm working on a bigger scene and hope gmax can do it (if not I'll just use Blender).
